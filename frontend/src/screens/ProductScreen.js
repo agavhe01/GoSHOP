@@ -15,7 +15,7 @@ import Loader from '../components/Loader';
 import Rating from '../components/Rating';
 import Message from '../components/Message';
 
-function ProductScreen({ match }) {
+function ProductScreen({ match, history }) {
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
@@ -24,6 +24,10 @@ function ProductScreen({ match }) {
   useEffect(() => {
     dispatch(listProductDetails(match.params.id));
   }, [dispatch, match]);
+
+  const addToCartHandler = () => {
+    history.push(`/cart/${match.params.id}?qty=${qty}`);
+  };
 
   return (
     <div>
@@ -101,15 +105,14 @@ function ProductScreen({ match }) {
                 )}
 
                 <ListGroup.Item>
-                  <div className='d-grid gap-2'>
-                    <Button
-                      className='btn btn-block'
-                      disabled={product.countInStock === 0}
-                      type='button'
-                    >
-                      Add to Cart
-                    </Button>
-                  </div>
+                  <Button
+                    onClick={addToCartHandler}
+                    className='btn-block'
+                    disabled={product.countInStock == 0}
+                    type='button'
+                  >
+                    Add to Cart
+                  </Button>
                 </ListGroup.Item>
               </ListGroup>
             </Card>
