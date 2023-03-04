@@ -29,7 +29,12 @@ function CartScreen({ match, location, history }) {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
+    console.log('Remove from Cart: ', id);
     //dispatch(removeFromCart(id))
+  };
+
+  const checkoutHandler = () => {
+    history.push('/login?redirect=shipping');
   };
 
   return (
