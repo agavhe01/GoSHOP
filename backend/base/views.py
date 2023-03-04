@@ -5,7 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import Product
 
-from .serializer import ProductSerializer
+from .serializer import ProductSerializer, UserSerializer, UserSerializerWithToken
 
 # JWT
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -16,8 +16,10 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)
 
-        data['username'] = self.user.username
-        data['email'] = self.user.email
+        serializer = UserSerializerWithToken(self.user).data
+
+        for k, v in serializer.items():
+            data[k] = v
 
         return data
 
@@ -37,6 +39,7 @@ def getRoutes(request):
         'api/products/<id>/',
         'api/products/delete/<id>/',
         'api/products/<update>/<id>/',
+        'users/profile/',
 
     ]
     return Response(routes)
@@ -46,6 +49,13 @@ def getRoutes(request):
 def getProducts(request):
     products = Product.objects.all()
     serializer = ProductSerializer(products, many=True)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+def getUserProfile(request):
+    user = request.user
+    serializer = UserSerializer(user, many=False)
     return Response(serializer.data)
 
 
