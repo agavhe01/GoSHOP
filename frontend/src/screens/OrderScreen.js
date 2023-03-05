@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-//import { PayPalButton } from 'react-paypal-button-v2';
+// import { PayPalButton } from 'react-paypal-button-v2';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import {
@@ -15,11 +15,17 @@ import {
   ORDER_DELIVER_RESET,
 } from '../constants/orderConstants';
 
+import {
+  PayPalScriptProvider,
+  PayPalButtons,
+  usePayPalScriptReducer,
+} from '@paypal/react-paypal-js';
+
 function OrderScreen({ match, history }) {
   const orderId = match.params.id;
   const dispatch = useDispatch();
 
-  const [sdkReady, setSdkReady] = useState(false);
+  const [sdkReady, setSdkReady] = useState(true);
 
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, error, loading } = orderDetails;
@@ -39,18 +45,6 @@ function OrderScreen({ match, history }) {
       .toFixed(2);
   }
 
-  const addPayPalScript = () => {
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src =
-      'https://www.paypal.com/sdk/js?client-id=AeDXja18CkwFUkL-HQPySbzZsiTrN52cG13mf9Yz7KiV2vNnGfTDP0wDEN9sGlhZHrbb_USawcJzVDgn';
-    script.async = true;
-    script.onload = () => {
-      setSdkReady(true);
-    };
-    document.body.appendChild(script);
-  };
-
   useEffect(() => {
     if (!userInfo) {
       history.push('/login');
@@ -66,17 +60,15 @@ function OrderScreen({ match, history }) {
       dispatch({ type: ORDER_DELIVER_RESET });
 
       dispatch(getOrderDetails(orderId));
-    } else if (!order.isPaid) {
-      if (!window.paypal) {
-        addPayPalScript();
-      } else {
-        setSdkReady(true);
-      }
     }
   }, [dispatch, order, orderId, successPay, successDeliver]);
 
   const successPaymentHandler = (paymentResult) => {
     dispatch(payOrder(orderId, paymentResult));
+  };
+
+  const unsuccessPaymentHandler = (paymentResult) => {
+    dispatch({ type: 'ORDER_PAY_FAIL' });
   };
 
   const deliverHandler = () => {
@@ -211,10 +203,34 @@ function OrderScreen({ match, history }) {
                   {!sdkReady ? (
                     <Loader />
                   ) : (
-                    <h4>PayPal Button </h4>
+                    <PayPalButtons
+                      disabled={false}
+                      onApprove={successPaymentHandler}
+                      onCancel={unsuccessPaymentHandler}
+                      onError={(err) => {
+                        console.log(err);
+                      }}
+                      createOrder={(data, actions) => {
+                        return actions.order
+                          .create({
+                            purchase_units: [
+                              {
+                                amount: {
+                                  currency_code: 'USD',
+                                  value: order.totalPrice,
+                                },
+                              },
+                            ],
+                          })
+                          .then((orderId) => {
+                            // Your code here after create the order
+                            return orderId;
+                          });
+                      }}
+                    />
                     // <PayPalButton
-                    //   amount={order.totalPrice}
-                    //   onSuccess={successPaymentHandler}
+                    //     amount={order.totalPrice}
+                    //     onSuccess={successPaymentHandler}
                     // />
                   )}
                 </ListGroup.Item>
