@@ -40,7 +40,7 @@ function App() {
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
           <Route path='/placeorder' component={PlaceOrderScreen} />
-          <Route path='/admin/userlist' component={UserListScreen} />
+          <Route path='/admin/userlist' component={UserListScreen} exact />
 
           <Route path='/order/:id' component={OrderScreen} />
         </Container>

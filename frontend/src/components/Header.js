@@ -31,6 +31,28 @@ function Header() {
             <Link to='/'>
               <Navbar.Brand>GoSHOP</Navbar.Brand>
             </Link>
+
+            {userInfo && userInfo.isAdmin && (
+              <Nav className='ml-auto'>
+                <Link to='/admin/userlist'>
+                  <Navbar.Brand>
+                    <i className='fas fa-wrench'></i> Users
+                  </Navbar.Brand>
+                </Link>
+
+                <Link to='/admin/productlist'>
+                  <Navbar.Brand>
+                    <i className='fas fa-wrench'></i> Products
+                  </Navbar.Brand>
+                </Link>
+
+                <Link to='/admin/orderlist'>
+                  <Navbar.Brand>
+                    <i className='fas fa-wrench'></i> Orders
+                  </Navbar.Brand>
+                </Link>
+              </Nav>
+            )}
           </Nav>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
