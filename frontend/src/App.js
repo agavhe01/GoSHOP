@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Foooter from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
@@ -12,6 +12,7 @@ import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import UserListScreen from './screens/UserListScreen';
 
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
@@ -39,9 +40,9 @@ function App() {
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
           <Route path='/placeorder' component={PlaceOrderScreen} />
-          <PayPalScriptProvider options={initialOptions}>
-            <Route path='/order/:id' component={OrderScreen} />
-          </PayPalScriptProvider>
+          <Route path='/admin/userlist' component={UserListScreen} />
+
+          <Route path='/order/:id' component={OrderScreen} />
         </Container>
       </main>
 
