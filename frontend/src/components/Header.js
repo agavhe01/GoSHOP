@@ -50,12 +50,12 @@ function Header() {
                 <>
                   <Link to='/profile'>
                     <Navbar.Brand>
-                      <i className='fas fa-user my-3'></i> Profile
+                      <i className='fas fa-user my-3'></i> {userInfo.name}
                     </Navbar.Brand>
                   </Link>
 
                   <Navbar.Brand onClick={logoutHandler}>
-                    <i className='fas fa-sign-out-alt mt-2'></i> Logout
+                    <i className='fas fa-sign-out-alt my-2 py-1'></i> Logout
                   </Navbar.Brand>
                 </>
               ) : (
