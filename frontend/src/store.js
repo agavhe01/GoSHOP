@@ -17,14 +17,32 @@ import {
   userUpdateProfileReducer,
 } from './reducers/userReducers';
 
+import {
+  orderCreateReducer,
+  orderDetailsReducer,
+  orderPayReducer,
+  orderListMyReducer,
+  orderListReducer,
+  orderDeliverReducer,
+} from './reducers/orderReducers';
+
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
+
   cart: cartReducer,
+
   userLogin: userLoginReducer,
   userRegister: userRegisterReducer,
   userDetails: userDetailsReducer,
   userUpdateProfile: userUpdateProfileReducer,
+
+  orderCreate: orderCreateReducer,
+  orderDetails: orderDetailsReducer,
+  orderPay: orderPayReducer,
+  orderListMy: orderListMyReducer,
+  orderList: orderListReducer,
+  orderDeliver: orderDeliverReducer,
 });
 
 const cartItemsFromStorage = localStorage.getItem('cartItems')
