@@ -20,7 +20,9 @@ function Paginate({ pages, page, keyword = '', isAdmin = false }) {
                 : `/admin/productlist/?keyword=${keyword}&page=${x + 1}`
             }
           >
-            <Pagination.Item active={x + 1 === page}>{x + 1}</Pagination.Item>
+            <Pagination.Item disabled={x + 1 !== page} active s>
+              {x + 1}
+            </Pagination.Item>
           </Link>
         ))}
       </Pagination>

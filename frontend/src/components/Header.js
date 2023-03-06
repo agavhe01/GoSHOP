@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import { logout } from '../actions/userActions';
+import SearchBox from './SearchBox';
 
 function Header() {
   const userLogin = useSelector((state) => state.userLogin);
@@ -32,7 +33,7 @@ function Header() {
               <Navbar.Brand>GoSHOP</Navbar.Brand>
             </Link>
 
-            {userInfo && userInfo.isAdmin && (
+            {userInfo && userInfo.isAdmin ? (
               <Nav className='ml-auto'>
                 <Link to='/admin/userlist'>
                   <Navbar.Brand>
@@ -52,6 +53,8 @@ function Header() {
                   </Navbar.Brand>
                 </Link>
               </Nav>
+            ) : (
+              <div />
             )}
           </Nav>
 
