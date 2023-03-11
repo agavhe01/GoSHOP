@@ -21,12 +21,9 @@ import OrderListScreen from './screens/OrderListScreen';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
 const initialOptions = {
-  'client-id':
-    'AVFZAeded6Vs-IoVuLHC59I_CNqXJRehVP14FnRo7NIruPBysnUUjMx1xI2NsMGY7PxUdVMfkeczIOIA',
+  'client-id': '',
   currency: 'USD',
   intent: 'capture',
-  'data-client-token':
-    'AVFZAeded6Vs-IoVuLHC59I_CNqXJRehVP14FnRo7NIruPBysnUUjMx1xI2NsMGY7PxUdVMfkeczIOIA',
 };
 
 function App() {
