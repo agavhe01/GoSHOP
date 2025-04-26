@@ -42,6 +42,13 @@ function CartScreen({ match, location, history }) {
   return (
     <Row>
       <Col md={8}>
+        <Button 
+          type='button' 
+          onClick={() => history.push('/')} 
+          className='btn-block mb-3'
+        >
+          Continue Shopping
+        </Button>
         <h1 style={{ color: 'inherit' }}>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message variant='info'>

@@ -1,5 +1,5 @@
 [data-theme='dark'] {
-    --bg-color: #121212;
+    --bg-color: #000000;
     --text-color: #ffffff;
     --card-bg: #1e1e1e;
     --border-color: #333333;
@@ -348,4 +348,69 @@ h6 {
 
 .order-status.not-delivered {
     color: var(--warning-color);
+}
+
+/* Carousel Styles */
+.carousel-theme {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+}
+
+.carousel-theme .carousel-inner {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.carousel-theme .carousel-item {
+    text-align: center;
+}
+
+.carousel-theme img {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.carousel-theme .carousel-caption {
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    padding: 1rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    transform: none;
+}
+
+.carousel-theme .carousel-caption h4 {
+    color: var(--text-color);
+    margin: 0;
+}
+
+.carousel-theme .carousel-control-prev,
+.carousel-theme .carousel-control-next {
+    background-color: var(--card-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+}
+
+.carousel-theme .carousel-control-prev-icon,
+.carousel-theme .carousel-control-next-icon {
+    background-color: var(--text-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
 }
