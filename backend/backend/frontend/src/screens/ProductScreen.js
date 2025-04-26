@@ -68,7 +68,7 @@ function ProductScreen({ match }) {
     <div>
       <Button 
         type='button' 
-        onClick={() => history.goBack()} 
+        onClick={() => history.push('/')} 
         className='btn-block mb-3'
       >
         Continue Shopping
@@ -85,30 +85,30 @@ function ProductScreen({ match }) {
             </Col>
 
             <Col md={3}>
-              <ListGroup variant='flush'>
-                <ListGroup.Item>
-                  <h3>{product.name}</h3>
-                </ListGroup.Item>
-
-                <ListGroup.Item>
-                  <Rating
-                    value={product.rating}
-                    text={`${product.numReviews} reviews`}
-                    color={'#f8e825'}
-                  />
-                </ListGroup.Item>
-
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
-
-                <ListGroup.Item>
-                  Description: {product.description}
-                </ListGroup.Item>
-              </ListGroup>
-            </Col>
-
-            <Col md={3}>
               <Card>
                 <ListGroup variant='flush'>
+                  <ListGroup.Item>
+                    <Row>
+                      <Col>
+                        <h3>{product.name}</h3>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <Rating
+                          value={product.rating}
+                          text={''}
+                          color={'#f8e825'}
+                        />
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        {product.numReviews} reviews
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
@@ -116,8 +116,6 @@ function ProductScreen({ match }) {
                         <strong>${product.price}</strong>
                       </Col>
                     </Row>
-                  </ListGroup.Item>
-                  <ListGroup.Item>
                     <Row>
                       <Col>Status:</Col>
                       <Col>
@@ -126,23 +124,34 @@ function ProductScreen({ match }) {
                     </Row>
                   </ListGroup.Item>
 
+                  <ListGroup.Item>
+                    <Row>
+                      <Col>
+                        <h5>Description:</h5>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <p>{product.description}</p>
+                      </Col>
+                    </Row>
+                  </ListGroup.Item>
+
                   {product.countInStock > 0 && (
                     <ListGroup.Item>
                       <Row>
                         <Col>Qty</Col>
-                        <Col xs='auto' className='my-1'>
+                        <Col xs='auto'>
                           <Form.Control
                             as='select'
                             value={qty}
                             onChange={(e) => setQty(e.target.value)}
                           >
-                            {[...Array(product.countInStock).keys()].map(
-                              (x) => (
-                                <option key={x + 1} value={x + 1}>
-                                  {x + 1}
-                                </option>
-                              )
-                            )}
+                            {[...Array(product.countInStock).keys()].map((x) => (
+                              <option key={x + 1} value={x + 1}>
+                                {x + 1}
+                              </option>
+                            ))}
                           </Form.Control>
                         </Col>
                       </Row>
@@ -150,14 +159,18 @@ function ProductScreen({ match }) {
                   )}
 
                   <ListGroup.Item>
-                    <Button
-                      onClick={addToCartHandler}
-                      className='btn-block'
-                      disabled={product.countInStock == 0}
-                      type='button'
-                    >
-                      Add to Cart
-                    </Button>
+                    <Row>
+                      <Col>
+                        <Button
+                          onClick={addToCartHandler}
+                          className='btn-block'
+                          disabled={product.countInStock === 0}
+                          type='button'
+                        >
+                          Add to Cart
+                        </Button>
+                      </Col>
+                    </Row>
                   </ListGroup.Item>
                 </ListGroup>
               </Card>
