@@ -128,9 +128,10 @@ function OrderScreen({ match, history }) {
               </p>
 
               {order.isDelivered ? (
-                <Message variant='success'>
+                <div className="alert alert-success" style={{ backgroundColor: '#28a745', color: 'white', border: 'none' }}>
+                  <i className="fas fa-check-circle me-2"></i>
                   Delivered on {order.deliveredAt}
-                </Message>
+                </div>
               ) : (
                 <Message variant='warning'>Not Delivered</Message>
               )}
@@ -143,7 +144,10 @@ function OrderScreen({ match, history }) {
                 {order.paymentMethod}
               </p>
               {order.isPaid ? (
-                <Message variant='success'>Paid on {order.paidAt}</Message>
+                <div className="alert alert-success" style={{ backgroundColor: '#28a745', color: 'white', border: 'none' }}>
+                  <i className="fas fa-check-circle me-2"></i>
+                  Paid on {order.paidAt}
+                </div>
               ) : (
                 <Message variant='warning'>Not Paid</Message>
               )}
