@@ -18,6 +18,3 @@ dist/
 # IDE configs
 .vscode/
 .idea/
-
-# Environment variables
-.env
