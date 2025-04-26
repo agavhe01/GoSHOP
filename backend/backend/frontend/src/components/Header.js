@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import { logout } from '../actions/userActions';
 import SearchBox from './SearchBox';
 import { useDarkMode } from '../context/DarkModeContext';
+import gsLight from '../img/GS light.png';
 
 function Header() {
   const userLogin = useSelector((state) => state.userLogin);
@@ -25,9 +26,16 @@ function Header() {
     <header>
       <Navbar expand='lg' collapseOnSelect>
         <Container>
-          <Link to='/' className='navbar-brand' style={{ fontSize: '1.1rem' }}>
-            GoSHOP
-          </Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <img 
+              src={gsLight} 
+              alt="GS Logo" 
+              style={{ height: '30px', objectFit: 'contain' }}
+            />
+            <Link to='/' className='navbar-brand' style={{ fontSize: '1.1rem' }}>
+              GoSHOP
+            </Link>
+          </div>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
 

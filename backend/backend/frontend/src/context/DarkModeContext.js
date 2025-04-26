@@ -5,6 +5,7 @@ const DarkModeContext = createContext();
 export const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
     const savedMode = localStorage.getItem('darkMode');
+    // Default to light mode (false) if no preference is saved
     return savedMode ? JSON.parse(savedMode) : false;
   });
 
