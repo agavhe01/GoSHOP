@@ -126,7 +126,7 @@ function PlaceOrderScreen({ history }) {
               ) : (
                 <ListGroup variant='flush'>
                   {cart.cartItems.map((item, index) => (
-                    <ListGroup.Item key={index}>
+                    <ListGroup.Item key={index} style={{ color: 'inherit' }}>
                       <Row>
                         <Col md={1}>
                           <Image
@@ -137,15 +137,20 @@ function PlaceOrderScreen({ history }) {
                           />
                         </Col>
 
-                        <Col>
-                          <Link to={`/product/${item.product}`}>
+                        <Col md={5}>
+                          <Link to={`/product/${item.product}`} style={{ color: 'inherit' }}>
                             {item.name}
                           </Link>
                         </Col>
 
-                        <Col md={4}>
-                          {item.qty} X ${item.price} = $
-                          {(item.qty * item.price).toFixed(2)}
+                        <Col md={2} className="text-center">
+                          {item.qty} X
+                        </Col>
+                        <Col md={2} className="text-end">
+                          ${item.price}
+                        </Col>
+                        <Col md={2} className="text-end">
+                          ${(item.qty * item.price).toFixed(2)}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -165,29 +170,29 @@ function PlaceOrderScreen({ history }) {
 
               <ListGroup.Item>
                 <Row>
-                  <Col>Items:</Col>
-                  <Col>${cart.itemsPrice}</Col>
+                  <Col md={8}>Items:</Col>
+                  <Col md={4} className="text-end">${cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
-                  <Col>Shipping:</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col md={8}>Shipping:</Col>
+                  <Col md={4} className="text-end">${cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
-                  <Col>Tax:</Col>
-                  <Col>${cart.taxPrice}</Col>
+                  <Col md={8}>Tax:</Col>
+                  <Col md={4} className="text-end">${cart.taxPrice}</Col>
                 </Row>
               </ListGroup.Item>
 
               <ListGroup.Item>
                 <Row>
-                  <Col>Total:</Col>
-                  <Col>${cart.totalPrice}</Col>
+                  <Col md={8}>Total:</Col>
+                  <Col md={4} className="text-end">${cart.totalPrice}</Col>
                 </Row>
               </ListGroup.Item>
 

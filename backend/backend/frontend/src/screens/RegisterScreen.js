@@ -39,7 +39,7 @@ function RegisterScreen({ location, history }) {
 
   return (
     <FormContainer>
-      <h1>Sign In</h1>
+      <h1 style={{ color: 'inherit' }}>Register</h1>
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}
@@ -96,7 +96,7 @@ function RegisterScreen({ location, history }) {
       <Row className='py-3'>
         <Col>
           Have an Account?{' '}
-          <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
+          <Link to={redirect ? `/login?redirect=${redirect}` : '/login'} style={{ color: 'inherit' }}>
             Sign In
           </Link>
         </Col>

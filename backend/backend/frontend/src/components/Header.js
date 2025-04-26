@@ -61,19 +61,19 @@ function Header() {
 
               {userInfo ? (
                 <>
-                  <Link to='/profile' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                  <Link to='/profile' className='nav-link' style={{ fontSize: '1.1rem', color: 'inherit' }}>
                     <i className='fas fa-user'></i> {userInfo.name}
                   </Link>
                   <NavbarBrand 
                     onClick={logoutHandler} 
                     className='nav-link' 
-                    style={{ cursor: 'pointer', fontSize: '1.1rem' }}
+                    style={{ cursor: 'pointer', fontSize: '1.1rem', color: 'inherit' }}
                   >
                     <i className='fas fa-sign-out-alt'></i> Logout
                   </NavbarBrand>
                 </>
               ) : (
-                <Link to='/login' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                <Link to='/login' className='nav-link' style={{ fontSize: '1.1rem', color: 'inherit' }}>
                   <i className='fas fa-sign-in-alt'></i> Login
                 </Link>
               )}
@@ -81,7 +81,7 @@ function Header() {
               <NavbarBrand 
                 onClick={toggleDarkMode} 
                 className='nav-link' 
-                style={{ cursor: 'pointer', fontSize: '1.1rem' }}
+                style={{ cursor: 'pointer', fontSize: '1.1rem', color: 'inherit' }}
               >
                 <i className={`fas fa-${darkMode ? 'sun' : 'moon'}`}></i> {darkMode ? 'Light' : 'Dark'} Mode
               </NavbarBrand>
