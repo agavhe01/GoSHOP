@@ -2,22 +2,19 @@ import React from 'react';
 import {
   Navbar,
   Container,
-  Col,
   Nav,
   NavbarBrand,
-  NavDropdown,
-  NavLink,
 } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 import { logout } from '../actions/userActions';
 import SearchBox from './SearchBox';
+import { useDarkMode } from '../context/DarkModeContext';
 
 function Header() {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
-
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const dispatch = useDispatch();
 
   const logoutHandler = () => {
@@ -26,70 +23,60 @@ function Header() {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar expand='lg' collapseOnSelect>
         <Container>
-          <Nav className='ml-auto'>
-            <Link to='/'>
-              <Navbar.Brand>GoSHOP</Navbar.Brand>
-            </Link>
-
-            {userInfo && userInfo.isAdmin ? (
-              <Nav className='ml-auto'>
-                <Link to='/admin/userlist'>
-                  <Navbar.Brand>
-                    <i className='fas fa-wrench'></i> Users
-                  </Navbar.Brand>
-                </Link>
-
-                <Link to='/admin/productlist'>
-                  <Navbar.Brand>
-                    <i className='fas fa-wrench'></i> Products
-                  </Navbar.Brand>
-                </Link>
-
-                <Link to='/admin/orderlist'>
-                  <Navbar.Brand>
-                    <i className='fas fa-wrench'></i> Orders
-                  </Navbar.Brand>
-                </Link>
-              </Nav>
-            ) : (
-              <div />
-            )}
-          </Nav>
+          <Link to='/' className='navbar-brand' style={{ fontSize: '1.1rem' }}>
+            GoSHOP
+          </Link>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
 
-          <Navbar.Collapse
-            className='justify-content-end'
-            id='basic-navbar-nav'
-          >
-            <Nav className='ml-auto'>
-              <Link to='/cart'>
-                <NavbarBrand>
-                  <i className='fas fa-shopping-cart my-3'> </i> Cart
-                </NavbarBrand>
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='ms-auto'>
+              {userInfo && userInfo.isAdmin && (
+                <>
+                  <Link to='/admin/userlist' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                    <i className='fas fa-users'></i> Users
+                  </Link>
+                  <Link to='/admin/productlist' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                    <i className='fas fa-box'></i> Products
+                  </Link>
+                  <Link to='/admin/orderlist' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                    <i className='fas fa-shopping-bag'></i> Orders
+                  </Link>
+                </>
+              )}
+
+              <Link to='/cart' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                <i className='fas fa-shopping-cart'></i> Cart
               </Link>
 
               {userInfo ? (
                 <>
-                  <Link to='/profile'>
-                    <Navbar.Brand>
-                      <i className='fas fa-user my-3'></i> {userInfo.name}
-                    </Navbar.Brand>
+                  <Link to='/profile' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                    <i className='fas fa-user'></i> {userInfo.name}
                   </Link>
-
-                  <Navbar.Brand onClick={logoutHandler}>
-                    <i className='fas fa-sign-out-alt my-2 py-1'></i> Logout
-                  </Navbar.Brand>
+                  <NavbarBrand 
+                    onClick={logoutHandler} 
+                    className='nav-link' 
+                    style={{ cursor: 'pointer', fontSize: '1.1rem' }}
+                  >
+                    <i className='fas fa-sign-out-alt'></i> Logout
+                  </NavbarBrand>
                 </>
               ) : (
-                <Link to='/login'>
-                  <Navbar.Brand>
-                    <i className='fas fa-sign-in-alt my-3'></i> Login
-                  </Navbar.Brand>
+                <Link to='/login' className='nav-link' style={{ fontSize: '1.1rem' }}>
+                  <i className='fas fa-sign-in-alt'></i> Login
                 </Link>
               )}
+
+              <NavbarBrand 
+                onClick={toggleDarkMode} 
+                className='nav-link' 
+                style={{ cursor: 'pointer', fontSize: '1.1rem' }}
+              >
+                <i className={`fas fa-${darkMode ? 'sun' : 'moon'}`}></i> {darkMode ? 'Light' : 'Dark'} Mode
+              </NavbarBrand>
             </Nav>
           </Navbar.Collapse>
         </Container>

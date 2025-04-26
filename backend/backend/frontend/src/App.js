@@ -17,6 +17,8 @@ import UserEditScreen from './screens/UserEditScreen';
 import ProductListScreen from './screens/ProductListScreen';
 import ProductEditScreen from './screens/ProductEditScreen';
 import OrderListScreen from './screens/OrderListScreen';
+import { DarkModeProvider } from './context/DarkModeContext';
+import './darkMode.css';
 
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
 
@@ -28,35 +30,37 @@ const initialOptions = {
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <main className='py-3'>
-        <Container>
-          <Switch>
-            <Route path='/' component={HomeScreen} exact />
-            <Route path='/product/:id' component={ProductScreen} />
-            <Route path='/cart/:id?' component={CartScreen} />
-            <Route path='/login' component={LoginScreen} />
-            <Route path='/register' component={RegisterScreen} />
-            <Route path='/profile' component={ProfileScreen} />
-            
-            {/* Checkout routes - accessible to both guests and logged in users */}
-            <Route path='/shipping' component={ShippingScreen} />
-            <Route path='/payment' component={PaymentScreen} />
-            <Route path='/placeorder' component={PlaceOrderScreen} />
-            <Route path='/order/:id' component={OrderScreen} />
+    <DarkModeProvider>
+      <Router>
+        <Header />
+        <main className='py-3'>
+          <Container>
+            <Switch>
+              <Route path='/' component={HomeScreen} exact />
+              <Route path='/product/:id' component={ProductScreen} />
+              <Route path='/cart/:id?' component={CartScreen} />
+              <Route path='/login' component={LoginScreen} />
+              <Route path='/register' component={RegisterScreen} />
+              <Route path='/profile' component={ProfileScreen} />
+              
+              {/* Checkout routes - accessible to both guests and logged in users */}
+              <Route path='/shipping' component={ShippingScreen} />
+              <Route path='/payment' component={PaymentScreen} />
+              <Route path='/placeorder' component={PlaceOrderScreen} />
+              <Route path='/order/:id' component={OrderScreen} />
 
-            {/* Admin routes */}
-            <Route path='/admin/userlist' component={UserListScreen} />
-            <Route path='/admin/user/:id/edit' component={UserEditScreen} />
-            <Route path='/admin/productlist' component={ProductListScreen} />
-            <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
-            <Route path='/admin/orderlist' component={OrderListScreen} />
-          </Switch>
-        </Container>
-      </main>
-      <Foooter />
-    </Router>
+              {/* Admin routes */}
+              <Route path='/admin/userlist' component={UserListScreen} />
+              <Route path='/admin/user/:id/edit' component={UserEditScreen} />
+              <Route path='/admin/productlist' component={ProductListScreen} />
+              <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
+              <Route path='/admin/orderlist' component={OrderListScreen} />
+            </Switch>
+          </Container>
+        </main>
+        <Foooter />
+      </Router>
+    </DarkModeProvider>
   );
 }
 

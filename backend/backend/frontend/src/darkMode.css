@@ -1,0 +1,322 @@
+[data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --card-bg: #1e1e1e;
+    --border-color: #333333;
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --danger-color: #ffffff;
+    --success-color: #ffffff;
+    --warning-color: #ffffff;
+    --info-color: #ffffff;
+    --nav-text-color: #ffffff;
+    --heading-color: #ffffff;
+    --product-text-color: #ffffff;
+    --product-price-color: #ffffff;
+    --product-rating-color: #ffffff;
+    --order-text-color: #ffffff;
+    --order-detail-color: #ffffff;
+    --email-text-color: #ffffff;
+    --table-header-bg: #2a2a2a;
+    --table-row-bg: #1e1e1e;
+    --table-row-hover: #333333;
+}
+
+[data-theme='light'] {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --danger-color: #000000;
+    --success-color: #000000;
+    --warning-color: #000000;
+    --info-color: #000000;
+    --nav-text-color: #000000;
+    --heading-color: #000000;
+    --product-text-color: #000000;
+    --product-price-color: #000000;
+    --product-rating-color: #000000;
+    --order-text-color: #000000;
+    --order-detail-color: #000000;
+    --email-text-color: #000000;
+    --table-header-bg: #f8f9fa;
+    --table-row-bg: #ffffff;
+    --table-row-hover: #f8f9fa;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.navbar {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color);
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--nav-text-color) !important;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: var(--secondary-color);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: var(--secondary-color);
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--secondary-color);
+}
+
+.btn-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: var(--secondary-color);
+}
+
+.table {
+    color: var(--text-color);
+    background-color: var(--card-bg);
+}
+
+.table thead th {
+    background-color: var(--table-header-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.table tbody tr {
+    background-color: var(--table-row-bg);
+    color: var(--text-color);
+}
+
+.table tbody tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+.table td,
+.table th {
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.form-control {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.form-control:focus {
+    background-color: var(--card-bg);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.list-group-item:hover {
+    background-color: var(--table-row-hover);
+}
+
+.alert {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.alert-danger {
+    background-color: var(--danger-color);
+    color: var(--secondary-color);
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: var(--secondary-color);
+}
+
+.alert-warning {
+    background-color: var(--warning-color);
+    color: var(--secondary-color);
+}
+
+.alert-info {
+    background-color: var(--info-color);
+    color: var(--secondary-color);
+}
+
+/* Product Card Styles */
+.card-body {
+    color: var(--product-text-color);
+}
+
+.card-title {
+    color: var(--product-text-color);
+}
+
+.card-text {
+    color: var(--product-text-color);
+}
+
+.price {
+    color: var(--product-price-color);
+}
+
+.rating {
+    color: var(--product-rating-color);
+}
+
+.rating span {
+    color: var(--product-rating-color);
+}
+
+.product-card {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.product-card:hover {
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+/* Ensure all text within product cards inherits the correct color */
+.product-card * {
+    color: var(--product-text-color);
+}
+
+/* Specific styles for product details */
+.product-details {
+    color: var(--product-text-color);
+}
+
+.product-price {
+    color: var(--product-price-color);
+    font-weight: bold;
+}
+
+.product-rating {
+    color: var(--product-rating-color);
+}
+
+/* Ensure links within product cards maintain proper contrast */
+.product-card a {
+    color: var(--product-text-color);
+}
+
+.product-card a:hover {
+    color: var(--primary-color);
+}
+
+/* Order Screen Styles */
+.order-screen {
+    color: var(--order-text-color);
+}
+
+.order-details {
+    color: var(--order-detail-color);
+}
+
+.order-item {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.order-item * {
+    color: var(--order-text-color);
+}
+
+/* User Information Styles */
+.user-info {
+    color: var(--email-text-color);
+}
+
+.user-email {
+    color: var(--email-text-color);
+}
+
+/* Order Summary Styles */
+.order-summary {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+.order-summary * {
+    color: var(--text-color);
+}
+
+/* Shipping and Payment Information */
+.shipping-info,
+.payment-info {
+    color: var(--text-color);
+}
+
+.shipping-info p,
+.payment-info p {
+    color: var(--text-color);
+}
+
+/* Order Status Indicators */
+.order-status {
+    color: var(--text-color);
+}
+
+.order-status.paid {
+    color: var(--success-color);
+}
+
+.order-status.not-paid {
+    color: var(--danger-color);
+}
+
+.order-status.delivered {
+    color: var(--success-color);
+}
+
+.order-status.not-delivered {
+    color: var(--warning-color);
+}
