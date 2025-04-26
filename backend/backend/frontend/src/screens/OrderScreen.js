@@ -237,7 +237,6 @@ function OrderScreen({ match, history }) {
                 </ListGroup.Item>
               )}
           </Card>
-
           <PayPalButton
             amount={order.totalPrice}
             onSuccess={successPaymentHandler}

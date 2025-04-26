@@ -6,6 +6,8 @@ import Message from '../components/Message';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { createOrder } from '../actions/orderActions';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
+import { PayPalButtons, PayPalScriptProvider } from '@paypal/react-paypal-js';
+import { PayPalButton } from 'react-paypal-button-v2';
 
 function PlaceOrderScreen({ history }) {
   const orderCreate = useSelector((state) => state.orderCreate);
@@ -34,13 +36,11 @@ function PlaceOrderScreen({ history }) {
   useEffect(() => {
     if (success) {
       history.push(`/order/${order._id}`);
-      console.log('Dispatch: ORDER_CREATE_RESET');
       dispatch({ type: ORDER_CREATE_RESET });
     }
   }, [success, history]);
 
   const placeOrder = () => {
-    console.log('Dispatch: createOrder');
     dispatch(
       createOrder({
         orderItems: cart.cartItems,
@@ -54,6 +54,46 @@ function PlaceOrderScreen({ history }) {
     );
   };
 
+  const createOrderHandler = (data, actions) => {
+    return actions.order.create({
+      purchase_units: [
+        {
+          amount: {
+            value: cart.totalPrice,
+            breakdown: {
+              item_total: {
+                value: cart.itemsPrice,
+                currency_code: 'USD',
+              },
+              shipping: {
+                value: cart.shippingPrice,
+                currency_code: 'USD',
+              },
+              tax_total: {
+                value: cart.taxPrice,
+                currency_code: 'USD',
+              },
+            },
+          },
+          items: cart.cartItems.map((item) => ({
+            name: item.name,
+            unit_amount: {
+              value: item.price,
+              currency_code: 'USD',
+            },
+            quantity: item.qty.toString(),
+          })),
+        },
+      ],
+    });
+  };
+
+  const onApproveHandler = (data, actions) => {
+    return actions.order.capture().then((details) => {
+      placeOrder();
+    });
+  };
+
   return (
     <div>
       <CheckoutSteps step1 step2 step3 step4 />
@@ -62,7 +102,6 @@ function PlaceOrderScreen({ history }) {
           <ListGroup variant='flush'>
             <ListGroup.Item>
               <h2>Shipping</h2>
-
               <p>
                 <strong>Shipping: </strong>
                 {cart.shippingAddress.address}, {cart.shippingAddress.city}
@@ -157,14 +196,12 @@ function PlaceOrderScreen({ history }) {
               </ListGroup.Item>
 
               <ListGroup.Item>
-                <Button
-                  type='button'
-                  className='btn-block'
-                  disabled={cart.cartItems === 0}
-                  onClick={placeOrder}
-                >
-                  Place Order
-                </Button>
+                <PayPalButton
+                  createOrder={createOrderHandler}
+                  amount={cart.totalPrice}
+                  onApprove={onApproveHandler}
+                  style={{ layout: 'vertical' }}
+                />
               </ListGroup.Item>
             </ListGroup>
           </Card>

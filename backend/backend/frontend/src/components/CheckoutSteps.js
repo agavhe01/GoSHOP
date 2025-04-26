@@ -8,10 +8,12 @@ function CheckoutSteps({ step1, step2, step3, step4 }) {
     <Nav className='justify-content-center mb-4'>
       <Nav.Item>
         {step1 ? (
-          <NavLink to='/login'>Login</NavLink>
+          <NavLink to='/login' className='text-muted'>
+            Sign In (Optional)
+          </NavLink>
         ) : (
-          <NavLink to='#' disabled>
-            Login
+          <NavLink to='/login' className='text-muted'>
+            Sign In (Optional)
           </NavLink>
         )}
       </Nav.Item>

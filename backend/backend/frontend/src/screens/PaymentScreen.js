@@ -26,7 +26,7 @@ function PaymentScreen({ history }) {
   return (
     <FormContainer>
       <CheckoutSteps step1 step2 step3 />
-
+      <h1>Payment Method</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group>
           <Form.Label as='legend'>Select Method</Form.Label>
@@ -34,16 +34,17 @@ function PaymentScreen({ history }) {
             <Form.Check
               type='radio'
               label='PayPal or Credit Card'
-              id='paypal'
+              id='PayPal'
               name='paymentMethod'
-              checked
+              value='PayPal'
+              checked={paymentMethod === 'PayPal'}
               onChange={(e) => setPaymentMethod(e.target.value)}
-            ></Form.Check>
+            />
           </Col>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
-          Continue
+        <Button type='submit' variant='primary' className='mt-3'>
+          Continue to Review Order
         </Button>
       </Form>
     </FormContainer>
