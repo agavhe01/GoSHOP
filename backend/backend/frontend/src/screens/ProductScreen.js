@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import {
   Row,
   Col,
@@ -19,12 +19,13 @@ import {
 } from '../actions/productActions';
 import { PRODUCT_CREATE_REVIEW_RESET } from '../constants/productConstants';
 
-function ProductScreen({ match, history }) {
+function ProductScreen({ match }) {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState('');
 
   const dispatch = useDispatch();
+  const history = useHistory();
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
@@ -65,9 +66,13 @@ function ProductScreen({ match, history }) {
 
   return (
     <div>
-      <Link to='/' className='btn btn-light my-3'>
-        Go Back
-      </Link>
+      <Button 
+        type='button' 
+        onClick={() => history.goBack()} 
+        className='btn-block mb-3'
+      >
+        Continue Shopping
+      </Button>
       {loading ? (
         <Loader />
       ) : error ? (
@@ -162,12 +167,12 @@ function ProductScreen({ match, history }) {
           <Row>
             <Col md={6}>
               <h4>Reviews</h4>
-              {product.reviews.length === 0 && (
+              {product && product.reviews && product.reviews.length === 0 && (
                 <Message variant='info'>No Reviews</Message>
               )}
 
               <ListGroup variant='flush'>
-                {product.reviews.map((review) => (
+                {product && product.reviews && product.reviews.map((review) => (
                   <ListGroup.Item key={review._id}>
                     <strong>{review.name}</strong>
                     <Rating value={review.rating} color='#f8e825' />

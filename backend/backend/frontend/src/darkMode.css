@@ -66,18 +66,23 @@ h6 {
 }
 
 .navbar {
-    background-color: var(--card-bg) !important;
+    background-color: #000000 !important;
     border-color: var(--border-color);
 }
 
 .navbar-brand,
 .nav-link {
-    color: var(--nav-text-color) !important;
+    color: #ffffff !important;
 }
 
 .navbar-brand:hover,
 .nav-link:hover {
-    color: var(--primary-color) !important;
+    color: #ffffff !important;
+    opacity: 0.8;
+}
+
+.navbar i {
+    color: #ffffff !important;
 }
 
 .btn-primary {
@@ -86,10 +91,22 @@ h6 {
     color: var(--secondary-color);
 }
 
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 .btn-secondary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .btn-danger {
@@ -113,6 +130,18 @@ h6 {
 .btn-info {
     background-color: var(--info-color);
     border-color: var(--info-color);
+    color: var(--secondary-color);
+}
+
+.btn-light {
+    background-color: var(--secondary-color);
+    border-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+.btn-light:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
     color: var(--secondary-color);
 }
 
