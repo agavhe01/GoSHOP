@@ -10,3 +10,6 @@ python manage.py migrate
 
 
 python manage.py runserver
+
+
+good place to beß

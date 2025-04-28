@@ -83,7 +83,7 @@ function Header() {
                 className='nav-link' 
                 style={{ cursor: 'pointer', fontSize: '1.1rem', color: 'inherit' }}
               >
-                <i className={`fas fa-${darkMode ? 'sun' : 'moon'}`}></i> 
+                <i className={`fas fa-${darkMode ? 'sun' : 'moon'}`}></i> {darkMode ? 'Light Mode' : 'Dark Mode'}
               </NavbarBrand>
             </Nav>
           </Navbar.Collapse>
