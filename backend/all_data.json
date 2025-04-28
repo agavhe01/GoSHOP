@@ -1,0 +1,2032 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-03-03T03:20:55.163Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-03-03T03:40:20.322Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-03-03T03:48:30.112Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Brand\", \"Category\", \"Rating\", \"NumReviews\", \"Price\", \"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-03-03T03:49:43.450Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-03-03T03:50:52.971Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Cannon EOS 80D DSLR Camera",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-03-03T03:51:56.515Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Logitech G-Series Gaming Mouse",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-03-03T03:52:38.690Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-03-04T22:16:01.216Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "agavhera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-03-04T22:16:25.698Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Gavin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-03-04T22:16:48.336Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Gavin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-03-04T22:18:15.686Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "ggema",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-03-04T23:55:10.991Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "ggema@gmail.comsd",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-03-04T23:55:22.264Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "ggema@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-03-05T00:59:03.654Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "agavhera@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-03-05T02:23:57.410Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "gavin@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-03-05T19:58:43.131Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-03-05T21:16:58.873Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.930Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "2023-03-05 21:17:48.142176+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.933Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "2023-03-05 21:17:12.114113+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.934Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "2023-03-05 21:08:21.604157+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.935Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "2023-03-05 21:05:39.074404+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.936Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "2023-03-05 19:59:59.265760+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-03-05T21:19:21.937Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "2023-03-05 19:54:50.812359+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-03-05T21:19:56.690Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.724Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "16",
+    "object_repr": "2023-03-05 21:35:43.456244+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.727Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "15",
+    "object_repr": "2023-03-05 21:29:56.506786+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.728Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "14",
+    "object_repr": "2023-03-05 21:28:56.706014+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.729Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "13",
+    "object_repr": "2023-03-05 21:28:47.379567+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.730Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "12",
+    "object_repr": "2023-03-05 21:28:42.020511+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.731Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "11",
+    "object_repr": "2023-03-05 21:27:08.334685+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.732Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "10",
+    "object_repr": "2023-03-05 21:26:25.754303+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.733Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "9",
+    "object_repr": "2023-03-05 21:23:18.374086+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.735Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "2023-03-05 21:21:42.917301+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-03-05T21:45:02.736Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "2023-03-05 21:20:18.396466+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-03-05T21:45:13.171Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-03-05T22:04:47.617Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "20",
+    "object_repr": "2023-03-05 22:03:07.315898+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-03-05T22:04:47.619Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "19",
+    "object_repr": "2023-03-05 21:47:01.366111+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-03-05T22:04:47.620Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "18",
+    "object_repr": "2023-03-05 21:45:47.254294+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-03-05T22:04:47.621Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "17",
+    "object_repr": "2023-03-05 21:41:51.922678+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-03-05T22:04:56.278Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-03-05T22:05:00.172Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-03-05T22:05:06.101Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Logitech G-Series Gaming Mouse",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-03-05T22:05:11.446Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Cannon EOS 80D DSLR Camera",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-03-05T22:05:16.488Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-03-05T22:05:26.476Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CountInStock\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.808Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.810Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.812Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.813Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.815Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.816Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.817Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Cannon EOS 80D DSLR Camera",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.818Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.820Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.821Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.822Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.823Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.824Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.825Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.825Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.826Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.826Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Logitech G-Series Gaming Mouse",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.826Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Cannon EOS 80D DSLR Camera",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.827Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Phone 11 Pro 256GB Memory",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.828Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-03-05T22:10:04.828Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Logitech G-Series Gaming Mouse",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2023-03-05T22:10:13.793Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "21",
+    "object_repr": "2023-03-05 22:05:54.240419+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2023-03-05T22:13:27.908Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "22",
+    "object_repr": "2023-03-05 22:10:54.733226+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2023-03-05T22:13:53.329Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Logitech G-Series Gaming Mouse",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2023-03-05T22:13:53.330Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Cannon EOS 80D DSLR Camera",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2023-03-06T03:49:29.909Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2023-03-06T03:49:41.726Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "5",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2023-03-06T03:50:04.465Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2023-03-06T03:54:02.000Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Anesu's Balls",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2023-03-06T03:54:02.002Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Sample Name",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2023-03-06T03:54:02.004Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "Sample Name",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2023-03-06T04:15:30.650Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Something",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2023-03-06T04:15:47.455Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "Losd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2023-03-06T04:16:02.998Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "asds",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2023-03-06T04:16:16.358Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "asdasda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2023-03-06T04:16:27.125Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "adasd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2023-03-06T04:20:41.445Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "13",
+    "object_repr": "adasd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2023-03-06T04:20:41.448Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "12",
+    "object_repr": "asdasda",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2023-03-06T04:20:41.449Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "11",
+    "object_repr": "asds",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2023-03-06T04:20:41.450Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "10",
+    "object_repr": "Losd",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2023-03-06T04:20:41.451Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Something",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2025-04-26T03:57:46.147Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "Apple Iphone 15 256 GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2025-04-26T04:01:10.226Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "Apple Iphone 15 256 GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2025-04-26T04:03:07.565Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "Apple Iphone 15 256 GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2025-04-26T04:03:41.717Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "Apple Iphone 15 256 GB Memory",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2025-04-26T04:03:46.744Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Airpods Wireless Bluetooth Headphones",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2025-04-26T04:42:32.151Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "30",
+    "object_repr": "2023-03-05 22:43:41.256684+00:00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2025-04-26T04:42:37.929Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "33",
+    "object_repr": "2025-04-26 03:36:51.482494+00:00",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2025-04-26T16:04:51.319Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "Amazon Echo Dot 3rd Generation",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2025-04-28T16:26:16.531Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "14",
+    "object_repr": "Apple Iphone 15 256 GB Memory",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$qLXpqrbK9pev2e0pccq40F$6KaCavfOS/kYfWPA4cvBcm99Twjj/nTryimQEc5Mv54=",
+    "last_login": "2025-04-26T03:53:27.240Z",
+    "is_superuser": true,
+    "username": "agavhera@gmail.com",
+    "first_name": "Anesu",
+    "last_name": "Gavhera",
+    "email": "agavhera@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-03-03T03:02:49Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$a02WuUDR2APl$Wuxc6q1ytTSUYGGJVRJJOmpAVV1i5QY1uLVF1q01NJU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "gavin@gmail.com",
+    "first_name": "Gavin",
+    "last_name": "Gema",
+    "email": "gavin@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-04T22:16:25Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$yE7Opll5fHZG2zmioc4lZ2$C5c+iInYkIyPYgycRCJtP2z24bMU5BNXYLVj8eZ4pB8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "john@gmail.com",
+    "first_name": "John Connor",
+    "last_name": "",
+    "email": "john@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-04T23:44:06.705Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$HI1miBwHykQMeBWhCYEAlt$YMPxhOvp0a+jjFe6a1+vpMsmAe/tkJVZUzNhCcsczto=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "michael@gmail.com",
+    "first_name": "Michael",
+    "last_name": "",
+    "email": "michael@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-03-05T02:10:53.635Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3gsc7pj8d2xmaupy0b7c5og7qj8z50dl",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSECl5dL934DuXBBqgaS0q6M_26bdKHLmXNm3izgutSwjjyHidiFCXb67SKmZ247oAe2e-ept2WeIt8VftDBb53y63q4fwcVR93WMivwIgKRTQDJJetBCwSFDkBmoSwhKoOOnJbkUylYztlrC1syRrHPF9q2N7I:1u8WbX:5EajKxH16o_bUQ705VORRJfGNofwyVvSOJ0Ynutuy_Y",
+    "expire_date": "2025-05-10T03:53:27.241Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l7drueclsgrshvhq1ndexuyvp7kmzl36",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAMHQq4dO8ZyMCMUjWQlHbVeHdt0oVu_3vvbyrSupS4dpnjxOqsQJ1-t0T5KXUH_KB6bzq3usxT0ruiD9r1tbG8Lof7d1Col29tkgAyIXi2zvhBrEtIJCASwiAojoINjDdEFAjA6N2YrQlEPtkR1PsD5rM3tw:1pYuSf:2tLoTA2lkXMQ75cu_HIaftuELNLx4nv9mjVTiJg3zdk",
+    "expire_date": "2023-03-19T19:56:01.987Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "image": "airpods.jpg",
+    "brand": "Apple",
+    "category": "Electronics",
+    "description": "Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working",
+    "rating": "5.00",
+    "numReviews": 2,
+    "price": "89.99",
+    "countInStock": 0,
+    "createdAt": "2023-03-03T03:20:55.160Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "name": "Phone 11 Pro 256GB Memory",
+    "image": "phone.jpg",
+    "brand": "Apple",
+    "category": "Electronics",
+    "description": "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
+    "rating": "4.00",
+    "numReviews": 8,
+    "price": "599.99",
+    "countInStock": 8,
+    "createdAt": "2023-03-03T03:49:43.450Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 3,
+  "fields": {
+    "user": 1,
+    "name": "Cannon EOS 80D DSLR Camera",
+    "image": "camera.jpg",
+    "brand": "Sony",
+    "category": "Electronics",
+    "description": "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
+    "rating": "5.00",
+    "numReviews": 12,
+    "price": "399.99",
+    "countInStock": 6,
+    "createdAt": "2023-03-03T03:50:52.970Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 4,
+  "fields": {
+    "user": 1,
+    "name": "Logitech G-Series Gaming Mouse",
+    "image": "mouse.jpg",
+    "brand": "Logitech",
+    "category": "Electronics",
+    "description": "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
+    "rating": "3.00",
+    "numReviews": 1,
+    "price": "49.99",
+    "countInStock": 6,
+    "createdAt": "2023-03-03T03:51:56.513Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 5,
+  "fields": {
+    "user": 1,
+    "name": "Amazon Echo Dot 3rd Generation",
+    "image": "alexa.jpg",
+    "brand": "Amazon",
+    "category": "Electronics",
+    "description": "Our best sounding Echo Dot yet, enjoy an improved audio experience compared to any previous Echo Dot with Alexa for clearer vocals, deeper bass and vibrant sound in any room.",
+    "rating": "4.00",
+    "numReviews": 12,
+    "price": "29.99",
+    "countInStock": 10,
+    "createdAt": "2023-03-03T03:52:38.689Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 14,
+  "fields": {
+    "user": 1,
+    "name": "Apple Iphone 15 256 GB Memory",
+    "image": "iphone16_bNVMHUC.png",
+    "brand": "Apple",
+    "category": "Mobile Devices",
+    "description": "iPhone 16 is built for Apple Intelligence, the personal intelligence system that helps you write, express yourself, and get things done effortlessly. With groundbreaking privacy protections, it gives you peace of mind that no one else can access your data — not even Apple.\r\n\r\nBoost your productivity",
+    "rating": null,
+    "numReviews": 0,
+    "price": "1000.00",
+    "countInStock": 100,
+    "createdAt": "2025-04-26T03:40:26.558Z"
+  }
+},
+{
+  "model": "base.product",
+  "pk": 18,
+  "fields": {
+    "user": 1,
+    "name": "Sample Name",
+    "image": "/placeholder.png",
+    "brand": "Sample Brand",
+    "category": "Sample Category",
+    "description": "",
+    "rating": null,
+    "numReviews": 0,
+    "price": "0.00",
+    "countInStock": 0,
+    "createdAt": "2025-04-28T18:47:10.417Z"
+  }
+},
+{
+  "model": "base.review",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "user": 1,
+    "name": "Anesu",
+    "rating": 5,
+    "comment": "Great Product, loved it totally",
+    "createdAt": "2023-03-06T03:49:29.907Z"
+  }
+},
+{
+  "model": "base.review",
+  "pk": 2,
+  "fields": {
+    "product": 2,
+    "user": 1,
+    "name": "Anesu",
+    "rating": 5,
+    "comment": "Great Product, loved it totally",
+    "createdAt": "2023-03-06T03:49:41.725Z"
+  }
+},
+{
+  "model": "base.review",
+  "pk": 3,
+  "fields": {
+    "product": 3,
+    "user": 2,
+    "name": "Gavin",
+    "rating": 1,
+    "comment": "SHipping took too long",
+    "createdAt": "2023-03-06T03:50:04.464Z"
+  }
+},
+{
+  "model": "base.review",
+  "pk": 4,
+  "fields": {
+    "product": 1,
+    "user": 2,
+    "name": "Gavin",
+    "rating": 5,
+    "comment": "Shipping in a day, loved it",
+    "createdAt": "2023-03-06T03:54:45.769Z"
+  }
+},
+{
+  "model": "base.review",
+  "pk": 5,
+  "fields": {
+    "product": 4,
+    "user": 1,
+    "name": "Anesu",
+    "rating": 3,
+    "comment": "Good Product, several programmable buttons\n",
+    "createdAt": "2025-04-26T03:32:21.663Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 23,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": true,
+    "paidAt": "2023-03-05T22:53:17.042Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-03-06T03:30:48.441Z",
+    "createdAt": "2023-03-05T22:14:54.916Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 24,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:19:02.001Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 25,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:23:27.996Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 26,
+  "fields": {
+    "user": 3,
+    "paymentMethod": "PayPal",
+    "taxPrice": "56.58",
+    "shippingPrice": "0.00",
+    "totalPrice": "746.56",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:27:43.329Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 27,
+  "fields": {
+    "user": 3,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:32:19.551Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 28,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:36:43.472Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 29,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:39:54.619Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 30,
+  "fields": {
+    "user": 1,
+    "paymentMethod": "PayPal",
+    "taxPrice": "7.38",
+    "shippingPrice": "10.00",
+    "totalPrice": "107.37",
+    "isPaid": true,
+    "paidAt": "2023-03-05T22:45:50Z",
+    "isDelivered": true,
+    "deliveredAt": "2023-03-06T03:31:08Z",
+    "createdAt": "2023-03-05T22:43:41.256Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 31,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "32.80",
+    "shippingPrice": "0.00",
+    "totalPrice": "432.79",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-05T22:47:58.843Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 32,
+  "fields": {
+    "user": 1,
+    "paymentMethod": "PayPal",
+    "taxPrice": "4.10",
+    "shippingPrice": "10.00",
+    "totalPrice": "64.09",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2023-03-06T04:46:49.047Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 33,
+  "fields": {
+    "user": 1,
+    "paymentMethod": "PayPal",
+    "taxPrice": "36.90",
+    "shippingPrice": "0.00",
+    "totalPrice": "486.88",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2025-04-26T03:36:51.482Z"
+  }
+},
+{
+  "model": "base.order",
+  "pk": 34,
+  "fields": {
+    "user": 2,
+    "paymentMethod": "PayPal",
+    "taxPrice": "44.28",
+    "shippingPrice": "0.00",
+    "totalPrice": "584.25",
+    "isPaid": false,
+    "paidAt": null,
+    "isDelivered": false,
+    "deliveredAt": null,
+    "createdAt": "2025-04-26T04:17:38.754Z"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 24,
+  "fields": {
+    "product": 1,
+    "order": 23,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 25,
+  "fields": {
+    "product": 1,
+    "order": 24,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 26,
+  "fields": {
+    "product": 1,
+    "order": 25,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 27,
+  "fields": {
+    "product": 1,
+    "order": 26,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 28,
+  "fields": {
+    "product": 2,
+    "order": 26,
+    "name": "Phone 11 Pro 256GB Memory",
+    "qty": 1,
+    "price": "599.99",
+    "image": "/images/phone.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 29,
+  "fields": {
+    "product": 1,
+    "order": 27,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 30,
+  "fields": {
+    "product": 1,
+    "order": 28,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 31,
+  "fields": {
+    "product": 1,
+    "order": 29,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 32,
+  "fields": {
+    "product": 1,
+    "order": 30,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 33,
+  "fields": {
+    "product": 3,
+    "order": 31,
+    "name": "Cannon EOS 80D DSLR Camera",
+    "qty": 1,
+    "price": "399.99",
+    "image": "/images/camera.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 34,
+  "fields": {
+    "product": 4,
+    "order": 32,
+    "name": "Logitech G-Series Gaming Mouse",
+    "qty": 1,
+    "price": "49.99",
+    "image": "/images/mouse.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 35,
+  "fields": {
+    "product": 4,
+    "order": 33,
+    "name": "Logitech G-Series Gaming Mouse",
+    "qty": 1,
+    "price": "49.99",
+    "image": "/images/mouse.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 36,
+  "fields": {
+    "product": 3,
+    "order": 33,
+    "name": "Cannon EOS 80D DSLR Camera",
+    "qty": 1,
+    "price": "399.99",
+    "image": "/images/camera.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 37,
+  "fields": {
+    "product": 4,
+    "order": 34,
+    "name": "Logitech G-Series Gaming Mouse",
+    "qty": 1,
+    "price": "49.99",
+    "image": "/images/mouse.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 38,
+  "fields": {
+    "product": 3,
+    "order": 34,
+    "name": "Cannon EOS 80D DSLR Camera",
+    "qty": 1,
+    "price": "399.99",
+    "image": "/images/camera.jpg"
+  }
+},
+{
+  "model": "base.orderitem",
+  "pk": 39,
+  "fields": {
+    "product": 1,
+    "order": 34,
+    "name": "Airpods Wireless Bluetooth Headphones",
+    "qty": 1,
+    "price": "89.99",
+    "image": "/images/airpods.jpg"
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 23,
+  "fields": {
+    "order": 23,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 24,
+  "fields": {
+    "order": 24,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 25,
+  "fields": {
+    "order": 25,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 26,
+  "fields": {
+    "order": 26,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 27,
+  "fields": {
+    "order": 27,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 28,
+  "fields": {
+    "order": 28,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 29,
+  "fields": {
+    "order": 29,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 30,
+  "fields": {
+    "order": 30,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 31,
+  "fields": {
+    "order": 31,
+    "address": "Miller Hall Rm 20",
+    "city": "Boston MA",
+    "postalCode": "02144",
+    "country": "United States",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 32,
+  "fields": {
+    "order": 32,
+    "address": "3 Capen St",
+    "city": "Medford",
+    "postalCode": "02155",
+    "country": "Zimbabwe",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 33,
+  "fields": {
+    "order": 33,
+    "address": "3 Capen St",
+    "city": "Medford",
+    "postalCode": "MA",
+    "country": "02215",
+    "shippingPrice": null
+  }
+},
+{
+  "model": "base.shippingaddress",
+  "pk": 34,
+  "fields": {
+    "order": 34,
+    "address": "3 Capen St",
+    "city": "Medford",
+    "postalCode": "MA",
+    "country": "02145",
+    "shippingPrice": null
+  }
+}
+]
