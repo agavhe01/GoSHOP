@@ -1,0 +1,12 @@
+{
+    "name": "goshop-fullstack",
+    "private": true,
+    "scripts": {
+      "heroku-prebuild": "cd backend/backend/frontend && npm ci",
+      "heroku-postbuild": "cd backend/backend/frontend && npm run build"
+    },
+    "engines": {
+      "node": "18.x"
+    }
+  }
+  
