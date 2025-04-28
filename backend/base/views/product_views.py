@@ -13,30 +13,19 @@ from rest_framework import status
 
 @api_view(['GET'])
 def getProducts(request):
-    query = request.query_params.get('keyword')
-    if query == None:
-        query = ''
-
-    products = Product.objects.filter(
-        name__icontains=query).order_by('-createdAt')
-
-    page = request.query_params.get('page')
-    paginator = Paginator(products, 4)
-
     try:
-        products = paginator.page(page)
-    except PageNotAnInteger:
-        products = paginator.page(1)
-    except EmptyPage:
-        products = paginator.page(paginator.num_pages)
+        query = request.query_params.get('keyword')
+        if query == None:
+            query = ''
 
-    if page == None:
-        page = 1
-
-    page = int(page)
-    print('Page:', page)
-    serializer = ProductSerializer(products, many=True)
-    return Response(serializer.data)
+        products = Product.objects.filter(
+            name__icontains=query).order_by('-createdAt')
+        
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)
+    except Exception as e:
+        print(f"Error in getProducts: {str(e)}")
+        return Response({'error': str(e)}, status=500)
 
 
 @api_view(['GET'])
